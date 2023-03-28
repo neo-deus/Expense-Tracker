@@ -114,12 +114,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final mediaQuery = MediaQuery.of(context);  //this way you don't have to create multiple objects of MediaQuery.of(context) type, rather reuse the same object multiple times
+    final mediaQuery = MediaQuery.of(
+        context); //this way you don't have to create multiple objects of MediaQuery.of(context) type, rather reuse the same object multiple times
     final appbar = AppBar(
       title: Text(
         'Personal Expenses',
         style: TextStyle(
           fontFamily: 'OpenSans',
+          //opensans
         ),
       ),
       actions: [
