@@ -86,6 +86,7 @@ class Chart extends StatelessWidget {
             return Flexible(
               fit: FlexFit.tight,
               child: ChartBar(
+                //the values to be passed are not fixed,i.e.,dynamic, hence we cannot make this ChartBar instance an const
                 data['day'] as String,
                 data['amount'] as double,
                 totalSpending == 0.0

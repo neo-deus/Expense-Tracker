@@ -17,9 +17,10 @@ class TransactionList extends StatelessWidget {
                 'No transactions added yet!',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
+              //we already know the value to be passed in this widget instance hence it can be const
               Container(
                 height: 240,
                 child: Image.asset(
@@ -33,7 +34,7 @@ class TransactionList extends StatelessWidget {
             //ListView.builder used in place of ListView used in place of SinglChildScrollView+Column
             itemBuilder: (context, index) {
               return Card(
-                margin: EdgeInsets.symmetric(
+                margin: const EdgeInsets.symmetric(
                   horizontal: 5,
                   vertical: 8,
                 ),
@@ -56,7 +57,7 @@ class TransactionList extends StatelessWidget {
                     DateFormat.yMMMd().format(transactions[index].date),
                   ),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete),
+                    icon: const Icon(Icons.delete),
                     color: Theme.of(context).colorScheme.error,
                     onPressed: () => deleteTx(transactions[index].id),
                   ),
