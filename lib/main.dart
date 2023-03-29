@@ -116,6 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(
         context); //this way you don't have to create multiple objects of MediaQuery.of(context) type, rather reuse the same object multiple times
+        //whenever MediaQuery.of is present it will automatically rebuild your widget
     final appbar = AppBar(
       title: const Text(
         'Personal Expenses',
