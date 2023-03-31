@@ -28,7 +28,7 @@ class TransactionItem extends StatelessWidget {
             padding: const EdgeInsets.all(6.0),
             //const helps to prevent unnecessary rebuilding of the same widget whenevera build is called
             child: FittedBox(
-              child: Text('\$${transaction.amount}'),
+              child: Text('₹${transaction.amount}'),
             ),
           ),
         ),
